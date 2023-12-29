@@ -54,6 +54,7 @@ class ImportPage extends Command
             throw new \Exception(__('Archive is empty'));
         }
 
-        $output->writeln('Done.');
+        $output->writeln('<info>CMS content imported successfully!</info>');
+        return 0;
     }
 }
