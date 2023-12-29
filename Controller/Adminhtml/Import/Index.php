@@ -1,10 +1,6 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Controller\Adminhtml\Import;
+namespace Conceptive\CmsImportExport\Controller\Adminhtml\Import;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\View\Result\PageFactory;
@@ -24,14 +20,14 @@ class Index extends Action
 
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Conceptive_Cmsimportexport::import');
+        return $this->_authorization->isAllowed('Conceptive_CmsImportExport::import');
     }
 
     public function execute()
     {
         $resultPage = $this->pageFactory->create();
 
-        $resultPage->setActiveMenu('Conceptive_Cmsimportexport::import')
+        $resultPage->setActiveMenu('Conceptive_CmsImportExport::import')
             ->addBreadcrumb(__('CMS'), __('CMS'));
 
         $resultPage->addBreadcrumb(__('Import CMS'), __('Import CMS '));

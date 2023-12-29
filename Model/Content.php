@@ -1,12 +1,8 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 declare(strict_types=1);
 
-namespace Conceptive\Cmsimportexport\Model;
+namespace Conceptive\CmsImportExport\Model;
 
 use Magento\Cms\Api\BlockRepositoryInterface;
 use Magento\Store\Api\StoreRepositoryInterface;
@@ -19,7 +15,7 @@ use Magento\Cms\Model\PageFactory as CmsPageFactory;
 use Magento\Cms\Model\ResourceModel\Page\CollectionFactory as CmsPageCollectionFactory;
 use Magento\Cms\Model\ResourceModel\Block\CollectionFactory as CmsBlockCollectionFactory;
 use Magento\Framework\Stdlib\DateTime\DateTime;
-use Conceptive\Cmsimportexport\Api\ContentInterface;
+use Conceptive\CmsImportExport\Api\ContentInterface;
 use Magento\Framework\Filesystem\Io\File;
 
 class Content implements ContentInterface

@@ -1,10 +1,6 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Controller\Adminhtml\Block;
+namespace Conceptive\CmsImportExport\Controller\Adminhtml\Block;
 
 use Magento\Backend\App\Response\Http\FileFactory;
 use Magento\Ui\Component\MassAction\Filter;
@@ -12,7 +8,7 @@ use Magento\Backend\App\Action;
 use Magento\Framework\Stdlib\DateTime\DateTime;
 use Magento\Cms\Model\ResourceModel\Block\CollectionFactory;
 use Magento\Framework\App\Filesystem\DirectoryList;
-use Conceptive\Cmsimportexport\Api\ContentInterface as ImportExportContentInterface;
+use Conceptive\CmsImportExport\Api\ContentInterface as ImportExportContentInterface;
 
 class MassExport extends Action
 {
@@ -41,7 +37,7 @@ class MassExport extends Action
 
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Conceptive_Cmsimportexport::export_block');
+        return $this->_authorization->isAllowed('Conceptive_CmsImportExport::export_block');
     }
 
     public function execute()

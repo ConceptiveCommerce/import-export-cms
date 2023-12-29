@@ -1,16 +1,12 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Controller\Adminhtml\Import;
+namespace Conceptive\CmsImportExport\Controller\Adminhtml\Import;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\Result\RedirectFactory;
 use Magento\Framework\File\UploaderFactory;
-use Conceptive\Cmsimportexport\Api\ContentInterface;
-use Conceptive\Cmsimportexport\Model\Filesystem;
+use Conceptive\CmsImportExport\Api\ContentInterface;
+use Conceptive\CmsImportExport\Model\Filesystem;
 
 class Post extends Action
 {
@@ -36,7 +32,7 @@ class Post extends Action
 
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Conceptive_Cmsimportexport::import');
+        return $this->_authorization->isAllowed('Conceptive_CmsImportExport::import');
     }
 
     public function execute()

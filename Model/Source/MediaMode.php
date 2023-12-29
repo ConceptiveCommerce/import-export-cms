@@ -1,12 +1,8 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Model\Source;
+namespace Conceptive\CmsImportExport\Model\Source;
 
-use Conceptive\Cmsimportexport\Api\ContentInterface;
+use Conceptive\CmsImportExport\Api\ContentInterface;
 
 class MediaMode
 {
