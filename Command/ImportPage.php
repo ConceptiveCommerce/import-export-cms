@@ -1,13 +1,9 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Command;
+namespace Conceptive\CmsImportExport\Command;
 
 use Magento\Framework\ObjectManagerInterface;
-use Conceptive\Cmsimportexport\Api\ContentInterface;
+use Conceptive\CmsImportExport\Api\ContentInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -58,6 +54,7 @@ class ImportPage extends Command
             throw new \Exception(__('Archive is empty'));
         }
 
-        $output->writeln('Done.');
+        $output->writeln('<info>CMS content imported successfully!</info>');
+        return 0;
     }
 }

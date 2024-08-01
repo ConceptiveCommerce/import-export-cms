@@ -1,16 +1,12 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Block\Adminhtml\Import\Upload;
+namespace Conceptive\CmsImportExport\Block\Adminhtml\Import\Upload;
 
 use Magento\Backend\Block\Widget\Form\Generic;
 use Magento\Store\Api\StoreRepositoryInterface;
-use Conceptive\Cmsimportexport\Api\ContentInterface;
-use Conceptive\Cmsimportexport\Model\Source\CmsMode;
-use Conceptive\Cmsimportexport\Model\Source\MediaMode;
+use Conceptive\CmsImportExport\Api\ContentInterface;
+use Conceptive\CmsImportExport\Model\Source\CmsMode;
+use Conceptive\CmsImportExport\Model\Source\MediaMode;
 
 class Form extends Generic
 {
@@ -82,11 +78,11 @@ class Form extends Generic
                 'label' => __('ZIP File'),
                 'title' => __('ZIP File'),
                 'required' => true,
-                'Renderer' => '\Conceptive\Cmsimportexport\Block\Adminhtml\Import\Renderer\Csvfile',
+                'Renderer' => '\Conceptive\CmsImportExport\Block\Adminhtml\Import\Renderer\Csvfile',
             ]
         );
 
-        $fieldset->addType('csvfile', '\Conceptive\Cmsimportexport\Block\Adminhtml\Import\Renderer\Csvfile');
+        $fieldset->addType('csvfile', '\Conceptive\CmsImportExport\Block\Adminhtml\Import\Renderer\Csvfile');
 
         $fieldset->addField(
             'importtext',
@@ -159,9 +155,9 @@ class Form extends Generic
 ?>
 <style type="text/css">
     .sample-link {
-    text-align: center;
-    margin-left: 146px;
-    line-height: 34px;
-    font-size: 16px;
-}
+        text-align: center;
+        margin-left: 146px;
+        line-height: 34px;
+        font-size: 16px;
+    }
 </style>

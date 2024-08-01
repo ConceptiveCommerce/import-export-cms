@@ -1,5 +1,6 @@
 <?php
-namespace Conceptive\Cmsimportexport\Ui\Component;
+
+namespace Conceptive\CmsImportExport\Ui\Component;
 
 class MassAction extends \Magento\Ui\Component\MassAction
 {

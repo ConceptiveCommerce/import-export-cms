@@ -2,13 +2,13 @@
     "name": "conceptive/cmsimportexport",
     "description": "Extension For Magento 2 allows admin to import and export a large number of CMS Pages/Blocks at once",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
     ],
     "require": {
-        "php": "~7.4.0||~8.1.0"
+        "php": "~7.4.0||~8.1.0||~8.2.0"
     },
     "authors": [
         {
@@ -21,7 +21,7 @@
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
-            "Conceptive\\Cmsimportexport\\": ""
+            "Conceptive\\CmsImportExport\\": ""
         }
     }
 }

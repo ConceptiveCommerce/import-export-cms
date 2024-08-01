@@ -1,10 +1,6 @@
 <?php
-/**
- * Copyright © MageSpecialist - Skeeller srl. All rights reserved.
- * See COPYING.txt for license details.
- */
 
-namespace Conceptive\Cmsimportexport\Model;
+namespace Conceptive\CmsImportExport\Model;
 
 use Magento\Framework\Filesystem\DriverInterface;
 use Magento\Framework\Filesystem\Io\File;
@@ -12,9 +8,9 @@ use Magento\Framework\App\Filesystem\DirectoryList;
 
 class Filesystem
 {
-    const EXPORT_PATH = 'Conceptive_Cmsimportexport/export';
-    const EXTRACT_PATH = 'Conceptive_Cmsimportexport/extract';
-    const UPLOAD_PATH = 'Conceptive_Cmsimportexport/extract';
+    const EXPORT_PATH  = 'Conceptive_CmsImportExport/export';
+    const EXTRACT_PATH = 'Conceptive_CmsImportExport/extract';
+    const UPLOAD_PATH  = 'Conceptive_CmsImportExport/extract';
 
     protected $filesystem;
     protected $file;
